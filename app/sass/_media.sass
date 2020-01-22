@@ -1,0 +1,246 @@
+@import "vars"
+
+//Extra large: ≥1440px
++media-breakpoint-down(xl)
+
+//Large: ≥1200px  max-width: 1439px
++media-breakpoint-down(lg)
+
+//Medium: ≥992px max-width: 1199px
++media-breakpoint-down(md)
+	.tab
+		&-item
+			&__img
+				img
+					max-width: 340px
+		&-slider
+			.slick-slide
+				.tab-item__wrap
+					&:first-child
+						margin-left: -165px
+	.form
+		&-wrap
+			padding: 100px 50px
+			&:before
+				width: calc(100% - 70px)
+				height: calc(100% - 60px)
+				top: 30px
+				left: 35px
+
+//Small: ≥768px max-width: 991px
++media-breakpoint-down(sm)
+	.head
+		height: auto
+		max-height: inherit
+		&:before
+			display: none
+		&-list
+			margin-bottom: 60px
+		&-slider
+			img
+				margin: 0 auto
+				max-width: 400px
+	.school
+		&-ttl
+			text-align: center
+			line-height: 1
+			margin-bottom: 20px
+	.tab
+		&-slider
+			.slick-arrow
+				&.slick-next
+					right: 20px
+				&.slick-prev
+					left: 20px
+	.timetable
+		&-wrap
+			&__block
+				&_right
+					margin-left: inherit
+			&__ttl
+				font-size: 32px
+	.trainer
+		&-slider
+			padding: 0 50px
+		&-item
+			&__name
+				text-align: left
+			&__note
+				text-align: left
+			&__txt
+				text-align: left
+				margin-bottom: 20px
+			&__img
+				margin: 0 auto
+	.contacts
+		margin-bottom: 65px
+		&-ttl
+			text-align: center
+		&-addr
+			width: 280px
+			display: table
+			margin: 0 auto 40px
+		&-phone
+			width: 280px
+			display: table
+			margin: 0 auto 40px
+	.time-block
+		margin-bottom: 20px !important
+		&.last
+			margin-bottom: 0 !important
+	.nav-mob
+		width: 100%
+		position: fixed
+		bottom: 0
+		left: 0
+		background-color: #fff
+		z-index: 10
+		padding: 10px 0
+		&__link
+			display: block
+			span
+				display: block
+				color: #000
+				text-align: center
+				font-size: 12px
+			img
+				width: 30px
+				height: 30px
+				margin: 0 auto
+
+//Extra small: ≥576px max-width: 767px
++media-breakpoint-down(xs)
+	.head 
+		.row.height
+			padding-top: 50px
+		&-ttl
+			line-height: 1
+			span
+				margin-top: 10px
+		&-list
+			&:before, &:after
+				display: none
+	.school
+		padding: 50px 0
+		.row
+			padding: 0
+			border: none
+		&-dots
+			display: none
+		&-ttl
+			font-size: 40px
+		&-txt
+			text-align: center
+		&-block
+			float: none
+			margin: 0 auto 20px
+			&:last-child
+				margin-bottom: 0
+			&__numb
+				float: none
+				text-align: center
+			&__txt
+				float: none
+				text-align: center
+	.style
+		&-select
+			&.first
+				margin-bottom: 40px
+	.tab
+		padding: 50px 0 20px
+		&-item
+			position: relative
+			&__wrap
+				width: 100%
+				&:first-child
+					position: absolute
+					padding-left: 10px
+					left: 0
+			&__ttl
+				font-size: 24px
+			&__img
+				margin-left: 0
+				img
+					max-width: 100%
+				&:before
+					background: linear-gradient(90deg,rgba(0,0,0,.608281) 0,rgba(0,0,0,.140494) 75%,rgba(255,255,255,0) 90%)
+		&-slider
+			padding-bottom: 60px
+			.slick-arrow
+				top: inherit
+				bottom: 0
+				&.slick-next
+					right: 50%
+					margin-right: -50px
+				&.slick-prev
+					left: 50%
+					margin-left: -50px
+	.timetable
+		padding: 50px 0
+		&-wrap
+			min-height: 375px
+			&_black
+				margin-bottom: 20px
+				&:before
+					display: none
+			&_img
+				position: relative
+				&:before
+					content: ''
+					width: 100%
+					height: 100%
+					background-color: rgba(#000, .5)
+					position: absolute
+					top: 0
+					left: 0
+			&__ttl
+				position: relative
+			&__btn
+				position: relative
+	.form
+		&-wrap
+			padding: 100px 10px
+			&:before
+				display: none
+			.rline
+				&.last
+					margin-bottom: 40px
+			&_modal
+				padding: 50px 10px
+	.trainer
+		&-ttl
+			font-size: 36px
+		&-slider
+			padding: 0
+		&-item
+			padding: 0 50px
+			border: none
+			&__name
+				font-size: 28px
+			&__note
+				font-size: 16px
+	.contacts
+		padding-top: 0
+		.container:first-child
+			padding: 50px 10px
+		&-logo
+			margin: 0 auto 20px
+		&-cprt
+			margin-bottom: 50px
+		&-dev
+			display: table
+			float: none
+			margin: 0 auto
+	.time
+		&-block
+			&__ttl
+				font-size: 18px
+
+//Extra small: >0 max-width: 575px
++media-breakpoint-down(xxs)
+
++media-breakpoint-up(md)
+	.tab
+		&-slider
+			.slick-list
+				padding: 0 20%!important
