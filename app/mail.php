@@ -5,6 +5,7 @@
 	if(isset ($_POST['email'])) {$email=$_POST['email'];}
 
 	$to = "mashtalir_sasha@ukr.net"; // Замениь на емаил клиента
+	//$to = "showmasterdance@gmail.com";
 
 	$message = "Форма: $title <br><br>";
 	if ( $name || $phonenum || $email ) {
@@ -16,10 +17,10 @@
 
 	$headers = "MIME-Version: 1.0\r\n";
 	$headers .= "Content-type: text/html; charset=UTF-8\r\n";
-	$headers .= "From: no-reply@site.com"; // Заменить домен на домен клиента
+	$headers .= "From: no-reply@dancingschool.kiev.ua"; // Заменить домен на домен клиента
 
 	if (!$title && !$phonenum) {
 	} else {
-		mail($to,"New lead(site.com)",$message,$headers); // Заменить домен на домен клиента
+		mail($to,"New lead(dancingschool.kiev.ua)",$message,$headers); // Заменить домен на домен клиента
 	}
 ?>
